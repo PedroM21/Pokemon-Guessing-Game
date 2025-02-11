@@ -7,18 +7,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="card">
-        <h2 id="pokemonName">Pokeball</h2>
-        <img src="images/pokeball.png" alt="Pokemon" id="pokemonSprite">
-        <h2 id="feedback">Placeholder</h1>
-        <div class="container">
-            <input type="text" placeholder="Enter guess here" id="pokemonGuess">
-            <div>
-                <button id="guess">Guess</button>
+    <div class="game-container">
+        <h1 style="color: white; padding-top: 1rem;">Score: <span id="scoreValue">0</span></h1>
+        <div class="life-container">
+            <img src="images/pokeball.png" class="life active">
+            <img src="images/pokeball.png" class="life active">
+            <img src="images/pokeball.png" class="life active">
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <h2 id="pokemonName">Pokeball</h2>
+                <img src="images/pokeball.png" alt="Pokemon" id="pokemonSprite"> 
+                <h2 id="feedback"></h2>
+                <div class="container">
+                    <input type="text" placeholder="Enter guess here" id="pokemonGuess">
+                    <div>
+                        <button id="hint">Hint</button>
+                        <button id="guess">Guess</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
     <script src="pokemon.js"></script>
 </body>
 </html>

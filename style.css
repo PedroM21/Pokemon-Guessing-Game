@@ -11,12 +11,37 @@ body {
     justify-content: center;
 }
 
+.game-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.life-container {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.life-container img {
+    width: 10%;
+}
+
+.active {
+    opacity: 1;
+}
+
+.inactive {
+    opacity: 0.3;
+}
+
 .card {
     box-shadow: 0 6px 12px 0 rgba(0,0,0,0.2);
-    margin-top: 20px;
+    padding: 2rem;
     text-align: center;
     width: 400px;
-    height: 500px;
+    height: auto;
 }
 
 .card img {
@@ -33,12 +58,13 @@ body {
 }
 
 .container {
+    padding: 1rem;
     text-align: center;
 }
 
 .container input {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     width: 50%;
     color: white;
     border: 1px solid #ef5350;
@@ -48,8 +74,7 @@ body {
 }
 
 .container button {
-    padding: 12px;
-    margin-bottom: 20px;
+    padding: 1rem;
     width: 25%;
 	color: white;
 	border: 1px solid #ef5350;
